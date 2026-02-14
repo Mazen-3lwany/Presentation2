@@ -11,7 +11,6 @@ import Slide6 from "./slides/Slide6";
 import Slide7 from "./slides/Slide7";
 import Slide8 from "./slides/Slide8";
 
-
 const slides = [
     <Slide1 key="1" />,
     <Slide2 key="2" />,
@@ -38,11 +37,12 @@ function MiddlewarePresentation() {
     }
   };
 
-  const CurrentSlideComponent = slides[currentSlide];
-
   return (
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+
+    
     <SlideContainer slides={slides} currentSlide={currentSlide}>
-      <CurrentSlideComponent />
+      {slides[currentSlide]}
 
       <Controls
         currentSlide={currentSlide}
@@ -51,6 +51,7 @@ function MiddlewarePresentation() {
         prevSlide={prevSlide}
       />
     </SlideContainer>
+    </div>
   );
 }
 
