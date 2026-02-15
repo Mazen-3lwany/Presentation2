@@ -10,6 +10,7 @@ import Slide5 from "./slides/Slide5";
 import Slide6 from "./slides/Slide6";
 import Slide7 from "./slides/Slide7";
 import Slide8 from "./slides/Slide8";
+import Slide9 from "./slides/Slide9";
 
 const slides = [
     <Slide1 key="1" />,
@@ -20,6 +21,7 @@ const slides = [
     <Slide6 key="6" />,
     <Slide7 key="7" />,
     <Slide8 key="8" />,
+    <Slide9 key="9" />
 ];
 
 function MiddlewarePresentation() {
